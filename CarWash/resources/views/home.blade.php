@@ -35,23 +35,23 @@
             <a class="navbar-brand" href="#">::.CAR WASH.::</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <ul class="navbar-nav">
                   
-                <li class="nav-item active">
-                        <a class="nav-link" href="#"> <span class="sr-only"></span></a>
-                   
-                        <li class="nav-item">
-                        <a @click="abrirForm('Cliente')" class="nav-link" href="">Clientes</>
-                    </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                
+            <li class="nav-item">
+            <a @click="abrirForm('Cliente')" class="nav-link" href="C:\xampp\htdocs\PROGRAPARCIAL\CarWash\resources\js\components\ClienteComponent.vue">Clientes</>
+           </li>
                   
-                        <li class="nav-item">
-                        <a @click="abrirForm('Reservacion')" class="nav-link"href="#">Reservacion</href=>
-                    </li>
+          <li class="nav-item">
+          <a @click="abrirForm('Reservacion')" class="nav-link"href="#">Reservacion</href=>
+          </li>
                     
-                </ul>
+         </ul>
                 
             </div>
         </div>
@@ -72,9 +72,9 @@
     <Reservacion-component v-bind:form="forms" ref="Reservacion" v-show="forms['Reservacion'].mostrar" ></-component>
     
 </body>
-                </div>
-            </div>
-        </div>
+     </div>
+     </div>
+     </div>
     </div>
 </div>
 @endsection

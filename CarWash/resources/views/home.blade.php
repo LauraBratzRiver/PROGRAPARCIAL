@@ -44,10 +44,12 @@
             <a class="nav-link" href="#"> <span class="sr-only"></span></a>
                 
             <li class="nav-item">
-            <a @click="abrirForm('Cliente')" class="nav-link" href="C:\xampp\htdocs\PROGRAPARCIAL\CarWash\resources\js\components\ClienteComponent.vue">Clientes</>
+           
+            <a @click="abrirForm('Cliente')" class="nav-link" href="">Clientes</>
            </li>
                   
           <li class="nav-item">
+          
           <a @click="abrirForm('Reservacion')" class="nav-link"href="#">Reservacion</href=>
           </li>
                     

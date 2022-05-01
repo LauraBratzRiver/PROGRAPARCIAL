@@ -93,6 +93,9 @@ class Reservaciones extends Controller
         $Reservacion->delete();
         return response()->json(['id'=>$Reservacion->id], 200);
     }
+    {
+        
+    }
 
 
 

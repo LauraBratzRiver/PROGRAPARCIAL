@@ -76,7 +76,8 @@ class Reservaciones extends Controller
      * @param  \App\Reservacion  $Reservacion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reservacion $Reservacion)
+    
+     public function update(Request $request, Reservacion $Reservacion)
     {
         $Reservacion->update($request->all());
         return response()->json(['id'=>$request->id], 200);

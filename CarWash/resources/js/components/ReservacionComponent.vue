@@ -17,11 +17,11 @@
                                 </div>
                             </div>
                             <div class="row p-1">
-                                <div class="col col-md-3">Ciclo:</div>
+                                <div class="col col-md-3">TipoAutomovil:</div>
                                 <div class="col">
-                                    <select v-model="Reservacion.ciclo" required type="text" class="form-control">
-                                        <option value="I">Ciclo I</option>
-                                        <option value="II">Ciclo II</option>
+                                    <select v-model="Reservacion.TipoAutomovil" required type="text" class="form-control">
+                                        <option value="1">Moto</option>
+                                        <option value="2">Carro</option>
                                     </select>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                 </tr>
                                 <tr>
                                     <th>Cliente</th>
-                                    <th>CICLO</th>
+                                    <th>TipoAutomovil</th>
                                     <th>FECHA</th>
                                     <th></th>
                                 </tr>
@@ -69,7 +69,7 @@
                             <tbody>
                                 <tr v-for="item in Reservacions" @click='modificarReservacion( item )' :key="item.idReservacion">
                                     <td>{{item.Cliente}}</td>
-                                    <td>{{item.ciclo}}</td>
+                                    <td>{{item.TipoAutomovil}}</td>
                                     <td>{{item.fecha}}</td>
                                     <td>
                                         <button class="btn btn-danger" @click="eliminarReservacion(item)">Eliminar</button>
@@ -94,7 +94,7 @@
                 selector: '.card',
                 fit: false,
                 buscar:'',
-                Reservacions:[],
+                Reservaciones:[],
                 Clientes : [],
                 Reservacion:{
                     accion : 'nuevo',
@@ -106,7 +106,7 @@
                         id:'',
                         label:'',
                     },
-                    ciclo: '',
+                    TipodeAutomovil: '',
                 }
             }
         },
@@ -256,7 +256,7 @@
                     id:'',
                     label:'',
                 };
-                this.Reservacion.ciclo = '';
+                this.Reservacion.TipodeAutomovil = '';
             },
             abrirStore(store, modo){
                 return db.transaction(store, modo).objectStore(store);
